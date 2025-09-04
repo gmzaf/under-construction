@@ -1,27 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Site Under Construction</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Site Under Development</title>
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: sans-serif;
+      font-family: 'Segoe UI', sans-serif;
+      height: 100vh;
+      background-image: url('images/bg.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+      color: #fff;
+      padding: 60px 40px;
+      border-radius: 12px;
       text-align: center;
-      padding: 50px;
-      background-color: #f2f2f2;
+      max-width: 600px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     }
+
     h1 {
-      font-size: 2em;
-      color: #333;
+      font-size: 2.5em;
+      margin-bottom: 20px;
     }
+
     p {
       font-size: 1.2em;
-      color: #666;
+      line-height: 1.6;
     }
   </style>
 </head>
 <body>
-  <h1>🚧 Site Under Construction 🚧</h1>
-  <p>We're working hard to bring you something awesome.<br>Check back soon!</p>
+  <div class="overlay">
+    <h1>🚧 Site Under Development 🚧</h1>
+    <p>We're working hard behind the scenes to bring you something amazing.<br>Please check back soon!</p>
+  </div>
 </body>
 </html>
