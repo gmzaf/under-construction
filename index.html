@@ -47,7 +47,23 @@
   <div class="overlay">
     <h1>🚧 Site Under Development 🚧</h1>
     <p>We're working hard behind the scenes to bring you something amazing.<br>Please check back soon!</p>
-  </div>
+  <p style="margin-top: 30px; font-size: 1.1em;">
+  Meanwhile, <strong>contact us for collaboration</strong> — we’d love to hear from you.
+</p>
+<!-- Contact Section -->
+  <p id="contactEmail" style="margin-top: 30px; text-align: center; color: white; font-size: 1.1em;"></p>
+</div>
+  <script>
+    const user = "contact";
+    const domain = "gretchenso.com";
+    const email = user + "@" + domain;
+    const el = document.getElementById("contactEmail");
+    el.innerHTML = `<a href="mailto:${email}" style="color: #fff; text-decoration: underline;">${email}</a>`;
+  </script>
+
+
+  
 </body>
 </html>
+
 
